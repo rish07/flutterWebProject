@@ -1,0 +1,18 @@
+[
+    {
+        "fonts": [
+            {
+                "asset": "fonts/MaterialIcons-Regular.ttf"
+            }
+        ],
+        "family": "MaterialIcons"
+    },
+    {
+        "family":"Montserrat",
+        "fonts":[
+            {
+                "asset":"Montserrat-Regular.ttf"
+            }
+        ]
+    }
+]
