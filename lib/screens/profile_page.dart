@@ -23,9 +23,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: ListView(
                 padding: EdgeInsets.all(20),
                 children: <Widget>[
-                  CircleAvatar(
-                    backgroundImage: AssetImage('hero-bg.jpg'),
-                  )
+                  NavButton(),
                 ],
               ))
             : null,
@@ -71,6 +69,23 @@ class NavHeader extends StatelessWidget {
             )
         ],
       ),
+    );
+  }
+}
+
+class NavButton extends StatelessWidget {
+  final text;
+  final onPressed;
+  final Color color;
+
+  NavButton({this.text, this.onPressed, this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+      child: Text(text),
+      onPressed: onPressed,
+      highlightColor: color,
     );
   }
 }
